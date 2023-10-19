@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    input[type="text"], button {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      margin: 5px;
+    }
+    .calculator {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .result-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .result-container input {
+      width: calc(100% - 20px); /* Lățimea câmpului minus 20px pentru margini */
+      margin: 10px; /* Margini de 10px pe toate laturile */
+      font-size: 18px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/indexStyle.css">
+</head>
+
+<body>
+<div class="menu">
+  <ul>
+    <li>
+      <a href="Tabel.html">Tabel valori random</a>
+    </li>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="Grafice.html">Grafice</a>
+    </li>
+  </ul>
+</div>
+<br>
+<div class="calculator">
+  <div class="result-container">
+    <input type="text" id="resultB" readonly>
+    <input type="text" id="result" readonly>
+  </div>
+
+  <div>
+    <button onclick="clearScreen()">C</button>
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button onclick="appendValue('+')">+</button>
+  </div>
+  <div>
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button onclick="appendValue('-')">-</button>
+    <button onclick="appendValue('**')">x²</button> <!-- Adăugare buton pentru ridicare la pătrat -->
+  </div>
+  <div>
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button onclick="appendValue('*')">*</button>
+    <button onclick="appendValue('Math.sqrt(')">√</button> <!-- Adăugare buton pentru radical -->
+  </div>
+  <div>
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="appendValue('.')">.</button>
+    <button onclick="appendValue('Math.sin(')">sin</button> <!-- Adăugare buton pentru sinus -->
+    <button onclick="appendValue(')')">)</button>
+  </div>
+</div>
+
+<script src="js/calculator.js"></script>
+</body>
+
+</html>
+
+</body>
+</html>

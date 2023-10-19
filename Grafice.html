@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/indexStyle.css">
+  <link rel="stylesheet" href="css/grafice.css">
+  <title>Grafice</title>
+</head>
+<body>
+
+<div class="menu">
+  <ul>
+    <li>
+      <a href="Tabel.html">Tabel valori random</a>
+    </li>
+    <li>
+      <a href="Calculator.html">Calculator</a>
+    </li>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+  </ul>
+</div>
+<div class="sinusoid_menu">
+  <div>
+    <p>Amplitudine: <span id="rA"></span></p>
+    <input type="range" min="1" max="300" value="50" class="slider" id="AmpSlider">
+  </div>
+  <div>
+    <p>Frecventa: <span id="rF"></span></p>
+    <input type="range" min="0.0001" max="1" step="0.0001" value="0.02" class="slider" id="FreSlider">
+  </div>
+  <input type="radio" name="formula" value="1" id="formula1" checked>
+  <label for="formula1">sin(t) + cos(sqrt(3) * t)</label>
+  <br>
+  <input type="radio" name="formula" value="2" id="formula2">
+  <label for="formula2">sin(2 * PI * t)</label>
+<br>
+  <input type="radio" name="formula" value="3" id="formula3">
+  <label for="formula3">Semnal sinusoidal patrat</label>
+
+</div>
+<div class="sinusoid">
+  <canvas id="sinusoid" width="1000" height="600"></canvas>
+  <script src="js/grafice.js"></script>
+</div>
+
+
+
+</body>
+</html>

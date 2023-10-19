@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.menu{
+  width: 100%;
+  height: 100px;
+  margin-top: 2%;
+
+}
+.menu ul{
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.menu ul li{
+  list-style-type: none;
+  width: 26%;
+  height: 100px;
+  margin-left: 5%;
+  background-color: lightblue;
+  border-radius: 10px;
+  display: inline-block;
+}
+.menu ul li a{
+
+  height: 90%;
+  text-decoration: none;
+  text-align: center;
+  padding: 6px 10px;
+  color: black;
+  font-size: 24px;
+  margin-top: 25px;
+  font-family: 'Orbitron', sans-serif;
+  display: block;
+}
+.calculator {
+  padding: 10px;
+  border-radius: 1em;
+  height: 380px;
+  width: 400px;
+  margin: auto;
+  background-color: #474c72;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.divMenu{
+  width: 25%;
+}
+.divMenu button{
+  background-color: #c1c1c1;
+  width: 25%;
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.display-box {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #dcdbe1;
+  border: solid black 0.5px;
+  color: black;
+  border-radius: 5px;
+  width: 100%;
+  height: 65%;
+}
+#btn {
+  background-color: silver;
+  color: #191b28;
+}
+input[type=button] {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #191b28;
+  color: white;
+  border: solid white 0.5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 70%;
+  outline: none;
+}
+input:active[type=button] {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: bisque;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px){
+  .sidenav{padding-top: 15px;}
+  .sidenav{font-size: 18px;}
+}
+.menuStyle{
+  margin-left: 100px;
+}
+.buttonStyle{
+  background-color: #c1c1c1;
+  width: 25%;
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin-left: 188px;
+  margin-top: 20px;
+}

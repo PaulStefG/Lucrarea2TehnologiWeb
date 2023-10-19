@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tabel</title>
+  <link rel="stylesheet" href="css/Tabel.css">
+  <link rel="stylesheet" href="css/indexStyle.css">
+</head>
+<body>
+<div class="menu">
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="Calculator.html">Calculator</a>
+    </li>
+    <li>
+      <a href="Grafice.html">Grafice</a>
+    </li>
+  </ul>
+</div>
+<br>
+
+<h1>Generare valori aleatoare intr-un tablou</h1>
+<div>
+
+  <button id="generate-button">Genereaza Valori Aleatoare</button>
+
+  <div>
+    <label for="filterMinRow">Filtru: Linia minima:</label>
+    <input type="number" id="filterMinRow" value="1" min="1" max="100">
+  </div>
+  <div>
+    <label for="filterMaxRow">Filtru: Linia maxima:</label>
+    <input type="number" id="filterMaxRow" value="100" min="1" max="100">
+  </div>
+  <button id="apply-filter-button">Aplica Filtru</button>
+</div>
+
+
+<table id="random-values-table">
+  <thead>
+  <tr>
+    <th>Rand</th>
+    <th>Valoare 1</th>
+    <th>Valoare 2</th>
+    <th>Valoare 3</th>
+    <th>Valoare 4</th>
+    <th>Valoare 5</th>
+
+  </tr>
+  </thead>
+  <tbody id="table-body">
+
+  </tbody>
+</table>
+<script src="js/Table.js"></script>
+</body>
+</html>
